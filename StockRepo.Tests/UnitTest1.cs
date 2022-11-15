@@ -7,8 +7,8 @@ namespace StockRepo.Tests
 
 	public class Tests
 	{
-		const string NAME = "item";
-		const int PRICE = 99;
+		const string NAME = "aStockItem";
+		const int PRICE = 100;
 
     	[SetUp]
     	public void Setup()
@@ -24,5 +24,34 @@ namespace StockRepo.Tests
 			Assert.That( si.Name == NAME );
 			Assert.That( si.PricePence == PRICE );
     	}
+
+		[Test]
+		public void Test_StockRepoAdd()
+		{
+			StockItem si = new StockItem(NAME, PRICE);
+
+			StockRepo sr = new StockRepo();
+			sr.Add(si);
+			Assert.That( sr.Size == 1 );
+
+			sr.Clear();
+			Assert.That( sr.Size == 0 );
+		}
+
+		[Test]
+		public void Test_StockRepoGetStockItemIDs()
+		{
+			StockRepo si = new StockRepo();
+			const NITEMS = 100;
+
+			for (int i=0; i<NITEMS; i++) 
+			{
+				StockItem si = new (StockItem( NAME + i, PRICE + i) );
+				si.Add(si);
+			}
+
+			string items[] = si.GetStockItemIDs();
+			Assert.That( /* number of items is NITEMS */  );
+		}
 	}
 }
