@@ -3,3 +3,15 @@
 /home/mark/GIT/csharp-unit/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfoInputs.cache
 /home/mark/GIT/csharp-unit/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfo.cs
 /home/mark/GIT/csharp-unit/StockRepo/obj/Debug/net6.0/StockRepo.csproj.CoreCompileInputs.cache
+/home/mark/GIT/unit-csharp/StockRepo/bin/Debug/net6.0/StockRepo.deps.json
+/home/mark/GIT/unit-csharp/StockRepo/bin/Debug/net6.0/StockRepo.dll
+/home/mark/GIT/unit-csharp/StockRepo/bin/Debug/net6.0/StockRepo.pdb
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.csproj.AssemblyReference.cache
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.GeneratedMSBuildEditorConfig.editorconfig
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfoInputs.cache
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfo.cs
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.csproj.CoreCompileInputs.cache
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.dll
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/refint/StockRepo.dll
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/StockRepo.pdb
+/home/mark/GIT/unit-csharp/StockRepo/obj/Debug/net6.0/ref/StockRepo.dll

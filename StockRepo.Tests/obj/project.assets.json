@@ -973,6 +973,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "StockRepo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/StockRepo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockRepo.dll": {}
+        }
       }
     }
   },
@@ -3956,6 +3966,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "StockRepo/1.0.0": {
+      "type": "project",
+      "path": "../StockRepo/StockRepo.csproj",
+      "msbuildProject": "../StockRepo/StockRepo.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3964,6 +3979,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "StockRepo >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -3973,11 +3989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mark/GIT/csharp-unit/StockRepo.Tests/StockRepo.Tests.csproj",
+      "projectUniqueName": "/home/mark/GIT/unit-csharp/StockRepo.Tests/StockRepo.Tests.csproj",
       "projectName": "StockRepo.Tests",
-      "projectPath": "/home/mark/GIT/csharp-unit/StockRepo.Tests/StockRepo.Tests.csproj",
+      "projectPath": "/home/mark/GIT/unit-csharp/StockRepo.Tests/StockRepo.Tests.csproj",
       "packagesPath": "/home/mark/.nuget/packages/",
-      "outputPath": "/home/mark/GIT/csharp-unit/StockRepo.Tests/obj/",
+      "outputPath": "/home/mark/GIT/unit-csharp/StockRepo.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mark/.nuget/NuGet/NuGet.Config"
@@ -3991,7 +4007,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/mark/GIT/unit-csharp/StockRepo/StockRepo.csproj": {
+              "projectPath": "/home/mark/GIT/unit-csharp/StockRepo/StockRepo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

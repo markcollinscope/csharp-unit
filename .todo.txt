@@ -1,0 +1,12 @@
+package = namespace
+Usings.cs ?
+namespace require { } or not?
+[TestFixture]
+[ annotation ]
+
+
+
+TO COVER:
+
+[annotations Setup ... TestFixture]
+Assert.Etc()

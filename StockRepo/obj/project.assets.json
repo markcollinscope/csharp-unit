@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mark/GIT/csharp-unit/StockRepo/StockRepo.csproj",
+      "projectUniqueName": "/home/mark/GIT/unit-csharp/StockRepo/StockRepo.csproj",
       "projectName": "StockRepo",
-      "projectPath": "/home/mark/GIT/csharp-unit/StockRepo/StockRepo.csproj",
+      "projectPath": "/home/mark/GIT/unit-csharp/StockRepo/StockRepo.csproj",
       "packagesPath": "/home/mark/.nuget/packages/",
-      "outputPath": "/home/mark/GIT/csharp-unit/StockRepo/obj/",
+      "outputPath": "/home/mark/GIT/unit-csharp/StockRepo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mark/.nuget/NuGet/NuGet.Config"

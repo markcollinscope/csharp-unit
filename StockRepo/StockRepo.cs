@@ -4,9 +4,9 @@ namespace StockRepo;
 
 public class StockItem
 {
-	const int UNDEFINED = -1;
+	public const int UNDEFINED = -1;
 
-	string Name 			{ get; set; }
+	public string Name 		{ get; set; }
 	public int ID  			{ get; set; }
 	public int PricePence 	{ get; set; }
 

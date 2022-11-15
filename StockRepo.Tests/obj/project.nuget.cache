@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "loWtRp9zd7A5y3mdaOImv2WDfWemzUu5896EmXUp9rOuGUCJRcKaWdu/jP/r3Eqcr4Wg23YNLVCtK7/G7crNmA==",
+  "dgSpecHash": "iH+yj5zXOgmnLaQDAqW1d3D6VIshk3Di7QE7slxlnz+0xKSc+9WG6wnILMMxZ28vEpa3Y/tSfeVKLSXoG4ie4A==",
   "success": true,
-  "projectFilePath": "/home/mark/GIT/csharp-unit/StockRepo.Tests/StockRepo.Tests.csproj",
+  "projectFilePath": "/home/mark/GIT/unit-csharp/StockRepo.Tests/StockRepo.Tests.csproj",
   "expectedPackageFiles": [
     "/home/mark/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/home/mark/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
