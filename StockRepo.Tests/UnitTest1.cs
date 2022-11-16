@@ -82,5 +82,9 @@ namespace StockRepo.Tests
 
 	/* what tests could be added here? 
        - IDs unique...
+
+	   what should be pointed out about these tests?
+	   - use of consts to enable easy change, single POC
+	   - DRY! (MakeName, MakePrice)
 	*/
 }
