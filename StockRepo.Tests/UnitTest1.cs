@@ -4,7 +4,6 @@ using StockRepo;
 
 namespace StockRepo.Tests
 {
-
 	public class Tests
 	{
 		const string NAME = "aStockItem";
@@ -20,9 +19,9 @@ namespace StockRepo.Tests
     	{
 			StockItem si = new StockItem(NAME, PRICE);
 
-			Assert.That( si.ID == StockItem.UNDEFINED );
 			Assert.That( si.Name == NAME );
 			Assert.That( si.PricePence == PRICE );
+			Assert.That( si.ID >= 0 );
     	}
 
 		[Test]
@@ -31,27 +30,32 @@ namespace StockRepo.Tests
 			StockItem si = new StockItem(NAME, PRICE);
 
 			StockRepo sr = new StockRepo();
+			Assert.That( si.ID >= 0 );
+
 			sr.Add(si);
-			Assert.That( sr.Size == 1 );
+			Assert.That( sr.Size == 1, "Size should be 1" );
 
 			sr.Clear();
-			Assert.That( sr.Size == 0 );
+			Assert.That( sr.Size == 0, "Size should be 0" );
 		}
 
 		[Test]
 		public void Test_StockRepoGetStockItemIDs()
 		{
-			StockRepo si = new StockRepo();
-			const NITEMS = 100;
+			StockRepo sr = new StockRepo();
+			const int NITEMS = 100;
 
 			for (int i=0; i<NITEMS; i++) 
 			{
-				StockItem si = new (StockItem( NAME + i, PRICE + i) );
-				si.Add(si);
+				StockItem si = new StockItem(NAME + i, PRICE + i);
+				sr.Add(si);
 			}
 
-			string items[] = si.GetStockItemIDs();
-			Assert.That( /* number of items is NITEMS */  );
+			List<int> items = sr.GetStockItemIDs();
+			Assert.That( items.Count == NITEMS, $"Number of items should be {NITEMS}, is: {items.Count}" );
 		}
 	}
+
+	/* what tests should be added here? */
+
 }
