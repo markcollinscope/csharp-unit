@@ -10,3 +10,41 @@ TO COVER:
 
 [annotations Setup ... TestFixture]
 Assert.Etc()
+
+history | grep dotnet
+  857  dotnet new classlib
+  866  dotnet add Cart/Cart.cs
+  867  dotnet sln add Cart/Cart.cs
+  872  dotnet run
+  874  dotnet sln add Cart/Cart.csproj
+  877  dotnet sln add Cart/Cart.csproj
+  885  dotnet add nunit
+  887  dotnet new nunit
+  893  dotnet add reference ../Cart/Cart.csproj 
+  896  dotnet test
+  904  dotnet test
+  907  dotnet  test
+  908  dotnet add Cart.Tests/Cart.Tests.csproj 
+  909  dotnet sln add Cart.Tests/Cart.Tests.csproj 
+  910  dotnet test
+
+- mkdir ClassDir
+- cd  ClassDir
+- dotnet new classlib
+- <rename Class1.cs>
+
+- cd ..
+- dotnet sln add ClassDir/ClassDir.csproj
+
+- mkdir ClassDir.Tests
+- cd ClassDir.Tests
+- dotnet new nunit
+- <rename files>
+
+- <same directory>
+- dotnet add reference ../ClassDir/ClassDir.csproj
+
+- cd ..
+- dotnet add ClassDir.Tests/ClassDir.Tests.csproj
+
+- dotnet test!
