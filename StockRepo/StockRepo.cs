@@ -48,5 +48,13 @@ public class StockRepo
 		
 		return l;
 	}
+
+	public StockItem GetStockItemByID(int ID)
+	{
+		StockItem si = _items.Find(
+			item => item.ID == ID
+		);
+		return si;
+	}
 }
 

@@ -1,5 +1,3 @@
-
-
 using NUnit.Framework;
 using StockRepo;
 
@@ -29,9 +27,7 @@ namespace StockRepo.Tests
 		public void Test_StockRepoAdd()
 		{
 			StockItem si = new StockItem(NAME, PRICE);
-
 			StockRepo sr = new StockRepo();
-			Assert.That( si.ID >= 0 );
 
 			sr.Add(si);
 			Assert.That( sr.Size == 1, "Size should be 1" );
@@ -40,23 +36,51 @@ namespace StockRepo.Tests
 			Assert.That( sr.Size == 0, "Size should be 0" );
 		}
 
+		private string MakeName(string name, int n) => name + n;
+		private int MakePrice(int p, int n) => p + n;
+
+		private StockRepo SetUpTestStockRepo(int nitems)
+		{
+			StockRepo sr = new StockRepo();
+		
+			for (int i=0; i<nitems; i++) 
+			{
+				StockItem si = new StockItem(
+					this.MakeName(NAME,i), 
+					this.MakePrice(PRICE, i)
+				);
+				sr.Add(si);
+			}
+			return sr;
+		}
+
 		[Test]
 		public void Test_StockRepoGetStockItemIDs()
 		{
-			StockRepo sr = new StockRepo();
 			const int NITEMS = 100;
-
-			for (int i=0; i<NITEMS; i++) 
-			{
-				StockItem si = new StockItem(NAME + i, PRICE + i);
-				sr.Add(si);
-			}
-
+			StockRepo sr = this.SetUpTestStockRepo(NITEMS);
+		
 			List<int> items = sr.GetStockItemIDs();
 			Assert.That( items.Count == NITEMS, $"Number of items should be {NITEMS}, is: {items.Count}" );
 		}
+
+		[Test]
+		public void Test_StockRepoGetStockItemByID()
+		{
+			const int NITEMS = 300;
+			StockRepo sr = this.SetUpTestStockRepo(NITEMS);
+		
+			List<int> items = sr.GetStockItemIDs();
+			for (int i=0; i<items.Count; i++)
+			{
+				StockItem si = sr.GetStockItemByID( items.ElementAt(i) );
+				Assert.That( si.Name == this.MakeName(NAME, i) );
+				Assert.That( si.PricePence == this.MakePrice(PRICE, i) );
+			}
+		}
 	}
 
-	/* what tests should be added here? */
-
+	/* what tests could be added here? 
+       - IDs unique...
+	*/
 }
