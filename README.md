@@ -53,3 +53,8 @@ public class Tests
 --- end Cart.Tests.cs ---
 ```
 
+# Notes on setting up Unit Testing in CSharp.
+
+## Setup a standard (code) module/namespeace
+* create directory
+* $ dotnet 
