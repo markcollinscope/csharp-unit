@@ -10,10 +10,10 @@ The basic idea is as follows (in terms of steps for the exercise):
 |                                                   |
 |            available               cart           |
 |    -------------------------    ----------------  |
-|    | bananas 		£1.99  |^|    | banana £1.99 |  |
-|    | apples   	£0.99  | |    | coffee £5.25 |  |
-|    | coffee   	£5.25  | |    |              |  |  
-|    | cheese   	£0.99  | |    ----------------  |
+|    | bananas      £1.99  |^|    | banana £1.99 |  |
+|    | apples       £0.99  | |    | coffee £5.25 |  |
+|    | coffee       £5.25  | |    |              |  |  
+|    | cheese       £0.99  | |    ----------------  |
 |    | ice cream    £3.99  |V|    |TOTAL:   £7.24|  |
 |    -------------------------    ----------------  |
 |                                                   |
@@ -33,19 +33,19 @@ Eg. you might start with:
 --- Cart.Tests.cs ----
 public class Tests
 {
-	[Setup]
-	public void Setup()
-	{
-   		... set up a stock repo with the items shown in it.
-	}
+    [Setup]
+    public void Setup()
+    {
+        ... set up a stock repo with the items shown in it.
+    }
 
-	[Test]
-	public void Test_AddItemsToCart()
-	{ 
-   		... add some items to shopping cart
-   		... get the number of items
-   		.... check it is the correct value
-	}
+    [Test]
+    public void Test_AddItemsToCart()
+    { 
+        ... add some items to shopping cart
+        ... get the number of items
+        .... check it is the correct value
+    }
 
    ...
 }
