@@ -1,7 +1,7 @@
 # Unit Testing Exercise
 Solution code is provided here to a unit testing exercise in csharp.
 The basic idea is as follows (in terms of steps for the exercise):
-* take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to providd).
+* take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
 * extend this implementation with a Cart providing services to implement the following 'UI' design:
 
 ```
@@ -55,6 +55,27 @@ public class Tests
 
 # Notes on setting up Unit Testing in CSharp.
 
+## Setup the Top Level of your App...
+* create direactory and go into it
+* create a new solution using:
+* $ dotnet new sln
+
 ## Setup a standard (code) module/namespeace
-* create directory
- dotnet add reference ../StockRepo/StockRepo.csproj
+* create directory (e.g. MyExample)
+* go into directory
+* $ dotnet new classlib
+* rename files as you wish. 
+
+## Setup a test module/namespace
+* create directory (e.g. MyExample.Tests)
+* go into directory
+* $ dotnet new nunit
+* rename files as you wish.
+* add a reference to the files you are testing ...
+* $ dotnet add <path/to>/MyExample/MyExample.csproj
+
+## Reference one namespace/module from another
+* say we want to add a dependency from the current module to module called 'Used'
+* add a reference to the *used* namespace using
+* $ dotnet add <path/to>/Used.csproj
+
