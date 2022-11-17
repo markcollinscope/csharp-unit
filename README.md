@@ -57,4 +57,4 @@ public class Tests
 
 ## Setup a standard (code) module/namespeace
 * create directory
-* $ dotnet 
+ dotnet add reference ../StockRepo/StockRepo.csproj

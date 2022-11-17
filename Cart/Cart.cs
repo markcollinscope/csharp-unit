@@ -1,18 +1,19 @@
-﻿using StockItemNS;
-
-namespace Cart;
-
-public class Cart
+﻿namespace CartNS
 {
-	public void Clear()
-	{} 
+	public class Cart
+	{
+		public int Size { get { return -99; } }
 
-	public void AddItem(string id)
-	{}
+		public void Clear()
+		{} 
 
-	public List<string> GetItems()
-	{ return new List<string>(); }
+		public void AddItem(int id)
+		{}
 
-	public int GetTotal()
-	{ return -99; } 
+		public List<int> GetItems()
+		{ return new List<int>(); }
+
+		public int GetTotal()
+		{ return -99; } 
+	}
 }

@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Cart\Cart.csproj" />
     <ProjectReference Include="..\StockItem\StockItem.csproj" />
+    <ProjectReference Include="..\StockRepo\StockRepo.csproj" />
   </ItemGroup>
 
 </Project>
