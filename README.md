@@ -20,5 +20,36 @@ The basic idea is as follows (in terms of steps for the exercise):
 |    [ add to cart ]                 [ checkout ]   |
 -----------------------------------------------------      
 
-
 ```
+Provide facilities to:
+* add items to the cart
+* get the total cost of the cart
+* show the cart contents on UI
+
+in a test first manner. You can assume the UI calls the Cart, StockRepo and StockItem packages (namespaces/modules) directly for the purposes of this exercise.
+
+Eg. you might start with:
+```
+--- Cart.Tests.cs ----
+public class Tests
+{
+	[Setup]
+	public void Setup()
+	{
+   		... set up a stock repo with the items shown in it.
+	}
+
+	[Test]
+	public void Test_AddItemsToCart()
+	{ 
+   		... add some items to shopping cart
+   		... get the number of items
+   		.... check it is the correct value
+	}
+
+   ...
+}
+
+--- end Cart.Tests.cs ---
+```
+
