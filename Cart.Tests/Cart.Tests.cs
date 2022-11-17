@@ -2,17 +2,16 @@ using NUnit.Framework;
 using StockItemNS;
 using StockRepoNS;
 using CartNS;
-using System.ComponentModel;
 
 namespace CartNS.Tests
 {
 
     public class Tests
     {
-        private const string NANA = "banana";
-        private const int NANAP = 199;
-        private const string APP = "apples";
-        private const int APPP = 99;
+        private const string BANANA= "banana";
+        private const int BANANA_PRICE = 199;
+        private const string APPLES = "apples";
+        private const int APPLES_PRICE = 99;
 
         private StockRepo _sr;
 
@@ -21,8 +20,8 @@ namespace CartNS.Tests
         {
             _sr = new StockRepo();
 
-            _sr.Add(new StockItem(NANA, NANAP));
-            _sr.Add(new StockItem(APP, APPP));
+            _sr.Add(new StockItem(BANANA, BANANA_PRICE));
+            _sr.Add(new StockItem(APPLES, APPLES_PRICE));
             _sr.Add(new StockItem("coffee", 525));
             _sr.Add(new StockItem("cheese", 99));
             _sr.Add(new StockItem("ice cream", 399));
@@ -53,7 +52,10 @@ namespace CartNS.Tests
             List<int> l = c.GetItems();
 
             Assert.That(
-                _sr.GetStockItemByID( l.ElementAt(0) ).Name == NANA
+                _sr.GetStockItemByID( l.ElementAt(0) ).Name == BANANA
+            );
+            Assert.That(
+                _sr.GetStockItemByID(l.ElementAt(1)).Name == APPLES
             );
         }
 
@@ -62,7 +64,7 @@ namespace CartNS.Tests
         {
             Cart c = SetupCart();
             Assert.That(
-                c.GetTotal() == NANAP + APPP
+                c.GetTotal() == BANANA_PRICE + APPLES_PRICE
             );
         }
     }
