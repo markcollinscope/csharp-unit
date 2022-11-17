@@ -1,19 +1,33 @@
-﻿namespace CartNS
+﻿using StockItemNS;
+using StockRepoNS;
+
+namespace CartNS
 {
 	public class Cart
 	{
-		public int Size { get { return -99; } }
+		StockRepo _sr;
+		List<int> _items = new List<int>();
 
-		public void Clear()
-		{} 
+		public Cart(StockRepo sr) { _sr = sr; }
 
-		public void AddItem(int id)
-		{}
+		public int Size { get => _items.Count; }
+
+		public void AddItem(int id) { _items.Add(id); }
 
 		public List<int> GetItems()
-		{ return new List<int>(); }
+		{
+			return _items;
+		}
 
 		public int GetTotal()
-		{ return -99; } 
+		{ 
+			int total = 0;
+			foreach (var id in _items)
+			{
+				int cost = _sr.GetStockItemByID(id).PricePence;
+				total += cost;
+			}
+			return total;
+		} 
 	}
 }

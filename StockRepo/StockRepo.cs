@@ -1,44 +1,38 @@
 ﻿using StockItemNS;
 
-namespace StockRepo;
-
-public class StockRepo
+namespace StockRepoNS
 {
-	private List<StockItem> _items = new List<StockItem>();
-
-	public void Clear()
+	public class StockRepo
 	{
- 		this._items = new List<StockItem>();
-	}
+		private List<StockItem> _items = new List<StockItem>();
 
-	public int Size
-    {
-        get
-        {
-            return _items.Count;
-        }
-    }
+		public void Clear()
+		{
+ 			this._items = new List<StockItem>();
+		}
 
-    public void Add(StockItem si)
-	{
-		_items.Add(si);
-	}
+		public int Size { get => _items.Count; }
 
-    public List<int> GetStockItemIDs()
-	{
-		List<int> l = new List<int>();
-		for (int i=0; i<this._items.Count; i++)
-			l.Add(this._items.ElementAt(i).ID);
+		public void Add(StockItem si)
+		{
+			_items.Add(si);
+		}
+
+		public List<int> GetStockItemIDs()
+		{
+			List<int> l = new List<int>();
+			for (int i=0; i<this._items.Count; i++)
+				l.Add(this._items.ElementAt(i).ID);
 		
-		return l;
-	}
+			return l;
+		}
 
-	public StockItem GetStockItemByID(int ID)
-	{
-		StockItem si = _items.Find(
-			item => item.ID == ID
-		);
-		return si;
+		public StockItem GetStockItemByID(int ID)
+		{
+			StockItem si = _items.Find(
+				item => item.ID == ID
+			);
+			return si;
+		}
 	}
 }
-

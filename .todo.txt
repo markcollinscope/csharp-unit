@@ -1,3 +1,4 @@
+treat tests as code
 package = namespace
 Usings.cs ?
 namespace require { } or not?
