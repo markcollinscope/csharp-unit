@@ -5,10 +5,11 @@ public class Tests
     [SetUp]
     public void Setup()
     {
+
     }
 
     [Test]
-    public void Test1()
+    public void Test_AddToCart()
     {
         Assert.Pass();
     }
