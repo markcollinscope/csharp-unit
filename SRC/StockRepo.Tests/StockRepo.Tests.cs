@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using StockItemNS;
-using StockRepo;
+using StockRepoNS;
 
 namespace StockRepo.Tests;
 
@@ -40,7 +40,7 @@ public class Tests
 	private string MakeName(string name, int n) => name + n;
 	private int MakePrice(int p, int n) => p + n;
 
-	private StockRepo SetUpTestStockRepo(int nitems)
+	private StockRepoNS.StockRepo SetUpTestStockRepo(int nitems)
 	{
 		StockRepo sr = new StockRepo();
 	
