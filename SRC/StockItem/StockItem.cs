@@ -1,4 +1,5 @@
-﻿namespace StockItemNS;
+﻿// TEST-CODE-STOCKITEM
+namespace StockItemNS;
 
 public class StockItem
 {
@@ -15,3 +16,4 @@ public class StockItem
         this.Name = name;
     }
 }
+// TEST-CODE-STOCKITEM

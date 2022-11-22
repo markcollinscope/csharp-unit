@@ -1,4 +1,6 @@
-﻿using StockItemNS;
+﻿// TEST-CODE-STOCKREPO-TESTS
+
+using StockItemNS;
 
 namespace StockRepo;
 
@@ -41,4 +43,4 @@ public class StockRepo
 		return si;
 	}
 }
-
+// TEST-CODE-STOCKREPO-TESTS
