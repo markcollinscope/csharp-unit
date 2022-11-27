@@ -4,7 +4,7 @@ The basic idea is as follows (in terms of steps for the exercise):
 * take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
 * extend this implementation with a Cart providing services to implement the following 'UI' design:
 
-UI-SHOPPING-APP-FOR-UNIT-TEST-EG-1
+EG-TEXT-SHOPPING-APP-UI
 ```
 -----------------------------------------------------
 |                   Shopping App                    |
@@ -22,18 +22,19 @@ UI-SHOPPING-APP-FOR-UNIT-TEST-EG-1
 -----------------------------------------------------      
 
 ```
-UI-SHOPPING-APP-FOR-UNIT-TEST-EG-1
 
 Provide facilities to:
 * add items to the cart
 * get the total cost of the cart
 * show the cart contents on UI
 
+EG-TEXT-SHOPPING-APP-UI-END
+
 in a test first manner. You can assume the UI calls the Cart, StockRepo and StockItem packages (namespaces/modules) directly for the purposes of this exercise.
 
 Eg. you might start with:
 
-UI-SHOPPING-APP-FOR-UNIT-TEST-EG-2
+EG-CODE-CART-OUTLINE-TEST
 ```
 --- Cart.Tests.cs ----
 public class Tests
@@ -57,11 +58,11 @@ public class Tests
 
 --- end Cart.Tests.cs ---
 ```
-UI-SHOPPING-APP-FOR-UNIT-TEST-EG-2
+EG-CODE-CART-OUTLINE-TEST
 
 # Notes on setting up Unit Testing in CSharp.
 
-SETTING-UP-UNIT-TESTS-CSHARP
+EG-TEXT-SETTING-UP-UNIT-TESTS-CSHARP
 
 ## Setup the Top Level of your App...
 * create direactory and go into it
@@ -87,4 +88,4 @@ SETTING-UP-UNIT-TESTS-CSHARP
 * add a reference to the *used* namespace using
 * $ dotnet add <path/to>/Used.csproj
 
-SETTING-UP-UNIT-TESTS-CSHARP
+EG-TEXT-SETTING-UP-UNIT-TESTS-CSHARP

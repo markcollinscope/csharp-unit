@@ -2,17 +2,13 @@ using NUnit.Framework;
 using StockItemNS;
 using StockRepoNS;
 
+// EG-CODE-STOCKREPO-UNIT-TESTS-PT1
 namespace StockRepo.Tests;
 
 public class Tests
 {
 	const string NAME = "aStockItem";
 	const int PRICE = 100;
-
-	[SetUp]
-	public void Setup()
-	{
-	}
 
 	[Test]
 	public void Test_StockItemCtor()
@@ -36,7 +32,9 @@ public class Tests
 		sr.Clear();
 		Assert.That( sr.Size == 0, "Size should be 0" );
 	}
+	// EG-CODE-STOCKREPO-UNIT-TESTS-PT1
 
+	// EG-CODE-STOCKREPO-UNIT-TESTS-PT2
 	private string MakeName(string name, int n) => name + n;
 	private int MakePrice(int p, int n) => p + n;
 
@@ -80,6 +78,7 @@ public class Tests
 		}
 	}
 }
+// EG-CODE-STOCKREPO-UNIT-TESTS-PT2
 
 /* what tests could be added here? 
 	- IDs unique...
