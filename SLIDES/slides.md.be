@@ -17,10 +17,11 @@ color: yellow
 
 ---
 # Agenda
-- ...
+- TBD...
 - practicals ...
 ---
 # Locations of Materials
+- TBD...
 
 ---
 # 'Unit' Tests
@@ -65,11 +66,15 @@ color: yellow
 - ...
 ---
 # Example Code
-- ...
+- csharp unit tests
+```
+bash-exec: extract EG-CODE-STOCKREPO-UNIT-TESTS-PT1 *.cs
+```
 ---
 # Exercise part 1
-- Work in pairs
-- ...
+```
+bash-exec: cd ..; extract EG-CODE-STOCKREPO-UNIT-TESTS-PT1 *.cs
+
 ---
 # Review
 ---
@@ -92,19 +97,13 @@ color: yellow
 - Estimating
 - Using Visual Studio or other IDEs
 - Other (non-functional) testing
-    - Stress tests ...
+    - Stress tests ... etc.
 ---
 # Summary & Feedback
-- Summary
-    - blah ...
+- TBD.
 
-- Feedback - more like this?
-
----
-# Some Code
-
-```
-code block
-x = 0;
-```
+- Feedback 
+	- what do you think? 
+	- Need to know more?
+	- Keen to do unit tests?
 ---
