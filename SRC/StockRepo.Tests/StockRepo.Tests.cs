@@ -2,7 +2,7 @@ using NUnit.Framework;
 using StockItemNS;
 using StockRepoNS;
 
-namespace StockRepo.Tests;
+namespace StockRepoNS.Tests;
 
 public class Tests
 {
