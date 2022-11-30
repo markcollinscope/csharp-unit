@@ -1,4 +1,5 @@
-﻿using StockItemNS;
+﻿// EG-CODE-STOCKREPO
+using StockItemNS;
 
 namespace StockRepoNS
 {
@@ -36,3 +37,4 @@ namespace StockRepoNS
 		}
 	}
 }
+// EG-CODE-STOCKREPO
