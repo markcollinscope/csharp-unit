@@ -3,7 +3,7 @@ using StockItemNS;
 using StockRepoNS;
 
 // EG-CODE-STOCKREPO-UNIT-TESTS-PT1
-namespace StockRepo.Tests;
+namespace StockRepoNS.Tests;
 
 public class Tests
 {
