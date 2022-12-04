@@ -1,10 +1,10 @@
-﻿// EG-CODE-STOCKITEM
+﻿// EG-CODE-STOCKITEM ### for extraction.
 namespace StockItemNS;
 
 public class StockItem
 {
+    public int ID			{ get; set; }
     public string Name 		{ get; set; }
-    public int ID  			{ get; set; }
     public int PricePence 	{ get; set; }
 
     static private int _nextID = 0;
@@ -16,4 +16,4 @@ public class StockItem
         this.Name = name;
     }
 }
-// EG-CODE-STOCKITEM
+// ### END ###

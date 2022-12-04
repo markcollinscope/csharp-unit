@@ -2,7 +2,7 @@ using NUnit.Framework;
 using StockItemNS;
 using StockRepoNS;
 
-// EG-CODE-STOCKREPO-UNIT-TESTS-PT1
+// EG-CODE-STOCKREPO-UT-1
 namespace StockRepoNS.Tests;
 
 public class Tests
@@ -32,9 +32,9 @@ public class Tests
 		sr.Clear();
 		Assert.That( sr.Size == 0, "Size should be 0" );
 	}
-	// EG-CODE-STOCKREPO-UNIT-TESTS-PT1
+	// ### END ###
 
-	// EG-CODE-STOCKREPO-UNIT-TESTS-PT2
+	// EG-CODE-STOCKREPO-UT-2
 	private string MakeName(string name, int n) => name + n;
 	private int MakePrice(int p, int n) => p + n;
 
@@ -78,5 +78,5 @@ public class Tests
 		}
 	}
 }
-// EG-CODE-STOCKREPO-UNIT-TESTS-PT2
+// ### END ###
 
