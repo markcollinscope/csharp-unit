@@ -5,7 +5,6 @@ using CartNS;
 
 namespace CartNS.Tests
 {
-
     public class Tests
     {
         private const string BANANA= "banana";
@@ -14,6 +13,7 @@ namespace CartNS.Tests
         private const int APPLES_PRICE = 99;
 
         private StockRepo _sr;
+        private Cart _c;
 
         [SetUp]
         public void Setup()
@@ -25,6 +25,8 @@ namespace CartNS.Tests
             _sr.Add(new StockItem("coffee", 525));
             _sr.Add(new StockItem("cheese", 99));
             _sr.Add(new StockItem("ice cream", 399));
+        
+            _c = SetupCart();
         }
 
         private Cart SetupCart()
@@ -37,19 +39,16 @@ namespace CartNS.Tests
             return c;
         }
 
-
         [Test]
         public void Test_AddToCartSize()
         {
-            Cart c = SetupCart();
-            Assert.That(c.Size == 2);
+            Assert.That(_c.Size == 2);
         }
 
         [Test]
         public void Test_AddToCartItems()
         {
-            Cart c = SetupCart();
-            List<int> l = c.GetItems();
+            List<int> l = _c.GetItems();
 
             Assert.That(
                 _sr.GetStockItemByID( l.ElementAt(0) ).Name == BANANA
@@ -62,9 +61,8 @@ namespace CartNS.Tests
         [Test]
         public void Test_CartTotal()
         {
-            Cart c = SetupCart();
             Assert.That(
-                c.GetTotal() == BANANA_PRICE + APPLES_PRICE
+                _c.GetTotal() == BANANA_PRICE + APPLES_PRICE
             );
         }
     }

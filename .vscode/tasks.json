@@ -14,6 +14,22 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/SRC/StockRepo.Tests/StockRepo.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
             "label": "publish",
             "command": "dotnet",
             "type": "process",

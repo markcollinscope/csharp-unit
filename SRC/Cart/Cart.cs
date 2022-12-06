@@ -3,10 +3,11 @@ using StockRepoNS;
 
 namespace CartNS
 {
+
 	public class Cart
 	{
 		StockRepo _sr;
-		List<int> _items = new List<int>();
+		private List<int> _items = new List<int>();
 
 		public Cart(StockRepo sr) { _sr = sr; }
 

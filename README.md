@@ -4,6 +4,8 @@ The basic idea is as follows (in terms of steps for the exercise):
 * take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
 * extend this implementation with a Cart providing services to implement the following 'UI' design:
 
+[ Removing item from StockRepo ]
+
 EG-TEXT-SHOPPING-APP-UI
 ```
 -----------------------------------------------------
@@ -24,9 +26,9 @@ EG-TEXT-SHOPPING-APP-UI
 ```
 
 Provide facilities to:
-* add items to the cart
-* get the total cost of the cart
-* show the cart contents on UI
+* [story #1] add items to the cart             
+* [story #2] get the total cost of the cart
+* [story #3] show the cart contents on UI
 
 EG-TEXT-SHOPPING-APP-UI-END
 
