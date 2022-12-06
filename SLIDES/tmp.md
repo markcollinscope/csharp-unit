@@ -9,7 +9,7 @@ backgroundColor: darkblue
 color: yellow
 ---
 # Intrduction to Test Driven Development in C#
-![bg right:25% 80%](https://marp.app/assets/marp.svg)
+![bg right:25% 80%](./IMAGES/TDD.png)
 
 - a half day mini-course
 - based on practical work
