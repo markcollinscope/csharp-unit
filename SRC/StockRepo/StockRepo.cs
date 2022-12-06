@@ -1,4 +1,4 @@
-﻿// EG-CODE-STOCKREPO
+﻿// EG-CODE-STOCKREPO ### for extraction.
 using StockItemNS;
 
 namespace StockRepoNS
@@ -37,4 +37,4 @@ namespace StockRepoNS
 		}
 	}
 }
-// EG-CODE-STOCKREPO
+// ### END ###

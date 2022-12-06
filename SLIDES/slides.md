@@ -68,12 +68,12 @@ color: yellow
 # Example Code
 - csharp unit tests
 ```
-bash-exec: extract EG-CODE-STOCKREPO-UNIT-TESTS-PT1 *.cs
 ```
 ---
-# Exercise part 1
+# Exercise - StockItem
 ```
-bash-exec: cd ..; extract EG-CODE-STOCKREPO-UNIT-TESTS-PT1 *.cs
+[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]
+```
 
 ---
 # Review
@@ -107,3 +107,4 @@ bash-exec: cd ..; extract EG-CODE-STOCKREPO-UNIT-TESTS-PT1 *.cs
 	- Need to know more?
 	- Keen to do unit tests?
 ---
+

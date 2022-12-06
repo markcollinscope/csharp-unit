@@ -68,68 +68,12 @@ color: yellow
 # Example Code
 - csharp unit tests
 ```
-namespace StockRepo.Tests;
-
-public class Tests
-{
-	const string NAME = "aStockItem";
-	const int PRICE = 100;
-
-	[Test]
-	public void Test_StockItemCtor()
-	{
-		StockItem si = new StockItem(NAME, PRICE);
-
-		Assert.That( si.Name == NAME );
-		Assert.That( si.PricePence == PRICE );
-		Assert.That( si.ID >= 0 );
-	}
-
-	[Test]
-	public void Test_StockRepoAdd()
-	{
-		StockItem si = new StockItem(NAME, PRICE);
-		StockRepo sr = new StockRepo();
-
-		sr.Add(si);
-		Assert.That( sr.Size == 1, "Size should be 1" );
-
-		sr.Clear();
-		Assert.That( sr.Size == 0, "Size should be 0" );
-	}
 ```
 ---
-# Exercise part 1
+# Exercise - StockItem
 ```
-namespace StockRepo.Tests;
-
-public class Tests
-{
-	const string NAME = "aStockItem";
-	const int PRICE = 100;
-
-	[Test]
-	public void Test_StockItemCtor()
-	{
-		StockItem si = new StockItem(NAME, PRICE);
-
-		Assert.That( si.Name == NAME );
-		Assert.That( si.PricePence == PRICE );
-		Assert.That( si.ID >= 0 );
-	}
-
-	[Test]
-	public void Test_StockRepoAdd()
-	{
-		StockItem si = new StockItem(NAME, PRICE);
-		StockRepo sr = new StockRepo();
-
-		sr.Add(si);
-		Assert.That( sr.Size == 1, "Size should be 1" );
-
-		sr.Clear();
-		Assert.That( sr.Size == 0, "Size should be 0" );
-	}
+[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]
+```
 
 ---
 # Review
@@ -163,3 +107,4 @@ public class Tests
 	- Need to know more?
 	- Keen to do unit tests?
 ---
+
