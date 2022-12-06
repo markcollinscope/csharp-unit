@@ -9,7 +9,7 @@ backgroundColor: darkblue
 color: yellow
 ---
 # Intrduction to Test Driven Development in C#
-![bg right:25% 80%](https://marp.app/assets/marp.svg)
+![bg right:25% 80%](./IMAGES/TDD.png)
 
 - a half day mini-course
 - based on practical work
@@ -34,19 +34,25 @@ color: yellow
 - All benefit from automation!
 ---
 # Unit Testing in the Sprint Lifecycle
+- idea is that unit testing is a standard part of the development Lifecycle
+- blah ...
+
 ---
 # The TDD Mantra
-- Mantra:
-    - Write the test (one test at a time)
-    - Red: write the code so it fails (i.e. minimal)
-    - Green: update the code so it works
-    - Refactor: restructure the code (if necessary)
-- NB: Tests are first class code - no shortcuts, oh it's only testing...
+- Write the test (one test at a time)
+- Red: write the code so it fails (i.e. minimal)
+- Green: update the code so it works
+- Refactor: restructure the code (if necessary)
+
+NB: Tests are first class code - no shortcuts, oh it's only testing...
+
 ---
 # The TDD Mantra (Bugs)
 - write a test to isolate the bug (red)
 - fix the bug (green)
 - refactor if necessary...
+
+
 ---
 # Where Do 'Units' Come From?
 - TDD discussion generally omit this!
@@ -55,24 +61,30 @@ color: yellow
     - Identify packages (units)
     - Ensure dependencies are clean
     - Start TDD with chosen packages
+
+
 ---
 # TDD Tools
 - nUnit, jUnit, xUnit, ...
 - Unit tests are *code* based
 - Using nUnit here for C#
 - See setup details
+
+
 ---
 # Basics of NUnit for C#
 - ...
+
+
 ---
-# Example Code
-- csharp unit tests
+# Example Code - CSharp Nunit Tests``
 ```
+
 ```
 ---
 # Exercise - StockItem
 ```
-[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]
+[[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]]
 ```
 
 ---

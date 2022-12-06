@@ -2,8 +2,6 @@ using NUnit.Framework;
 using StockItemNS;
 using StockRepoNS;
 
-namespace StockRepoNS.Tests 
-
 // ### EG-CODE-STOCKREPO-UT-1
 namespace StockRepoNS.Tests;
 
