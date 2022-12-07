@@ -4,7 +4,7 @@ theme: gaia
 class: invert
 paginate: true
 footer: Intro to TDD in C#
-header: R2C Online      
+header: R2C Online
 backgroundColor: darkblue
 color: yellow
 ---
@@ -28,9 +28,9 @@ color: yellow
 
 - What is a unit?
 - Compared to:
-  - Integration testing
-  - System testing
-  - UI testing 
+- Integration testing
+- System testing
+- UI testing
 - All benefit from automation!
 ---
 # Unit Testing in the Sprint Lifecycle
@@ -58,9 +58,9 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 - TDD discussion generally omit this!
 - This is a design activity
 - (Iteratively)
-    - Identify packages (units)
-    - Ensure dependencies are clean
-    - Start TDD with chosen packages
+- Identify packages (units)
+- Ensure dependencies are clean
+- Start TDD with chosen packages
 
 
 ---
@@ -84,7 +84,23 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 ---
 # Exercise - StockItem
 ```
-[[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]]
+namespace StockItemNS;
+
+public class StockItem
+{
+    public int ID			{ get; set; }
+    public string Name 		{ get; set; }
+    public int PricePence 	{ get; set; }
+
+    static private int _nextID = 0;
+
+    public StockItem(string name, int pricep)
+    {
+        this.ID = StockItem._nextID++;
+        this.PricePence = pricep;
+        this.Name = name;
+    }
+}
 ```
 
 ---
@@ -99,7 +115,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 # Review
 ---
 # Pros and Cons
--   
+-
 ---
 # What we haven't discussed
 - BDD & UI testing frameworks
@@ -109,14 +125,14 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 - Estimating
 - Using Visual Studio or other IDEs
 - Other (non-functional) testing
-    - Stress tests ... etc.
+- Stress tests ... etc.
 ---
 # Summary & Feedback
 - TBD.
 
-- Feedback 
-	- what do you think? 
-	- Need to know more?
-	- Keen to do unit tests?
+- Feedback
+- what do you think?
+- Need to know more?
+- Keen to do unit tests?
 ---
 
