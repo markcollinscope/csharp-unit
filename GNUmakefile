@@ -1,12 +1,8 @@
 PROJDIR := $(realpath $(CURDIR))
-SOURCE_DIR := $(PROJDIR)/SRC
-SLIDE_DIR := $(PROJDIR)/SLIDES
 
-HIDE=@
-DNC := dnclean
-DNT := dotnet test
-
-SLIDES := $(SLIDE_DIR)/slides.html
+#--- SLIDES SECTION ---
+SLIDE_DIR = $(PROJDIR)/SLIDES
+SLIDES = $(SLIDE_DIR)/slides.html
 
 .SUFFIXES: .tdd .marp .html
 
@@ -14,16 +10,25 @@ SLIDES := $(SLIDE_DIR)/slides.html
 	tpp $< > $@
 
 %.html: %.marp
-	echo marp %<
-
-dum:	x.html
+	marp $<
 
 slides: $(SLIDES)
-	
+
+#--- SOURCE CODE SECTION ---
+SOURCE_DIR := $(PROJDIR)/SRC	
+
+HIDE=@
+DNC := dnclean
+DNT := dotnet test
+
 .PHONY: clean test 
 
 test::
 	$(HIDE)cd $(SOURCE_DIR); echo "running tests in: $$(pwd)"; eval $(DNT);
 
+#--- ALL
+
 clean::
 	$(HIDE)cd $(SOURCE_DIR); echo "cleaning: $$(pwd)"; eval $(DNC);
+	$(HIDE)rm $(SLIDES)
+
