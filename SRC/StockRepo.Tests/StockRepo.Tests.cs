@@ -19,7 +19,9 @@ public class Tests
 		Assert.That( si.PricePence == PRICE );
 		Assert.That( si.ID >= 0 );
 	}
+	// ### END ### 1
 
+	// ### EG-CODE-STOCKREPO-UT-2
 	[Test]
 	public void Test_StockRepoAdd()
 	{
@@ -32,9 +34,9 @@ public class Tests
 		sr.Clear();
 		Assert.That( sr.Size == 0, "Size should be 0" );
 	}
-	// ### END ###
+	// ### END ### 2
 
-	// ### EG-CODE-STOCKREPO-UT-2
+	// ### EG-CODE-STOCKREPO-UT-3
 	private string MakeName(string name, int n) => name + n;
 	private int MakePrice(int p, int n) => p + n;
 
@@ -52,7 +54,9 @@ public class Tests
 		}
 		return sr;
 	}
+	// ### END ### 3
 
+	// ### EG-CODE-STOCKREPO-UT-4
 	[Test]
 	public void Test_StockRepoGetStockItemIDs()
 	{
@@ -78,4 +82,5 @@ public class Tests
 			Assert.That( si.PricePence == this.MakePrice(PRICE, i) );
 		}
 	}
+	// ### END ### 4
 }

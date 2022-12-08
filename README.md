@@ -6,7 +6,7 @@ The basic idea is as follows (in terms of steps for the exercise):
 
 [ Removing item from StockRepo ]
 
-EG-TEXT-SHOPPING-APP-UI
+<!-- ### EG-CART-EXERCISE-UI -->
 ```
 -----------------------------------------------------
 |                   Shopping App                    |
@@ -24,6 +24,7 @@ EG-TEXT-SHOPPING-APP-UI
 -----------------------------------------------------      
 
 ```
+<!-- ### END ### UI -->
 
 Provide facilities to:
 * [story #1] add items to the cart             

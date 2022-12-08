@@ -40,13 +40,18 @@ namespace CartNS.Tests
         }
 
         [Test]
+        // ### EG-CART-TEST
         public void Test_AddToCartSize()
+        // ### END ###
         {
             Assert.That(_c.Size == 2);
         }
 
+
         [Test]
+        // ### EG-CART-TEST
         public void Test_AddToCartItems()
+        // ### END ###
         {
             List<int> l = _c.GetItems();
 
@@ -59,7 +64,9 @@ namespace CartNS.Tests
         }
 
         [Test]
+        // ### EG-CART-TEST
         public void Test_CartTotal()
+        // ### END ###
         {
             Assert.That(
                 _c.GetTotal() == BANANA_PRICE + APPLES_PRICE

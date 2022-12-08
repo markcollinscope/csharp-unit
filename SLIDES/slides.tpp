@@ -8,6 +8,11 @@ header: R2C Online
 backgroundColor: darkblue
 color: yellow
 ---
+<style>
+section.code {
+	font-size: 20pt;
+}
+</style>
 # Intrduction to Test Driven Development in C#
 ![bg right:25% 80%](./IMAGES/TDD.png)
 
@@ -79,13 +84,49 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 ---
 # Example Code - CSharp Nunit Tests``
 ```
-
+TBD.
 ```
+
+
 ---
-# Exercise - StockItem
+<!-- _class: code -->
+# Exercise 1 - Background - StockItem Class
 ```
 [[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]]
 ```
+
+
+---
+<!-- _class: code -->
+# Exercise 1 - Background - Pre-Defined Tests - 1
+```
+[[bash-exec: extract  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
+```
+
+
+---
+<!-- _class: code -->
+# Exercise 1 - Background - Pre-Defined Tests - 2
+```
+[[bash-exec: extract  EG-CODE-STOCKREPO-UT-2 \*.cs ]]
+```
+
+
+---
+<!-- _class: code -->
+# Exercise 1 - Background - Pre-Defined Tests - 3
+```
+[[bash-exec: extract  EG-CODE-STOCKREPO-UT-3 \*.cs ]]
+```
+
+
+---
+<!-- _class: code -->
+# Exercise 1 - Background - Pre-Defined Tests - 4
+```
+[[bash-exec: extract  EG-CODE-STOCKREPO-UT-4 \*.cs ]]
+```
+
 
 ---
 # Review
@@ -94,7 +135,28 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing...""
 - when which why ?
 
 ---
-# Exercise part 2
+<!-- _class: code -->
+# Exercise 2 - Background - UI 'Design'
+[[bash-exec: extract  EG-CART-EXERCISE-UI \*.md ]]
+
+
+---
+# Exercise 2 - Description
+- Using the UI descibed...
+- Write - test first style...
+- The necessary functions for the UI to operate... 
+- as if they were server side:
+    - get available stock to display
+    - add stock item to cart
+    - get total cost
+
+
+---
+<!-- _class: code -->
+# Exercise 2 - Tests To Write
+[[bash-exec: extract  -m EG-CART-TEST \*.md ]]
+
+
 ---
 # Review
 ---
