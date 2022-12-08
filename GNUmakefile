@@ -1,9 +1,10 @@
 PROJDIR := $(realpath $(CURDIR))
 
 #--- SLIDES SECTION ---
-SLIDE_DIR = $(PROJDIR)/SLIDES
-SLIDES = $(SLIDE_DIR)/slides.html
+SLIDES_DIR = $(PROJDIR)/SLIDES
+SLIDES = $(SLIDES_DIR)/slides.html
 
+.PHONY: slides
 .SUFFIXES: .tdd .marp .html
 
 %.marp: %.tpp
@@ -29,6 +30,6 @@ test::
 #--- ALL
 
 clean::
-	$(HIDE)cd $(SOURCE_DIR); echo "cleaning: $$(pwd)"; eval $(DNC);
-	$(HIDE)rm $(SLIDES)
+	$(HIDE)cd $(SOURCE_DIR); echo "Cleaning: $$(pwd)"; eval $(DNC);
+	$(HIDE)echo 'Cleaning $(SLIDES_DIR)';  rm -f $(SLIDES)
 
