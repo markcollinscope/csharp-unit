@@ -1,4 +1,12 @@
 # Unit Testing Exercise
+NB: Please use latest version - tagged:
+
+<!-- ### EG-VERSION-TAG -->
+TBD !!! TBD !!!
+<!-- ### END ### -->
+
+TBD - UPDATE REQUIRED - TBD.
+
 Solution code is provided here to a unit testing exercise in csharp.
 The basic idea is as follows (in terms of steps for the exercise):
 * take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
@@ -61,11 +69,8 @@ public class Tests
 
 --- end Cart.Tests.cs ---
 ```
-EG-CODE-CART-OUTLINE-TEST
 
 # Notes on setting up Unit Testing in CSharp.
-
-EG-TEXT-SETTING-UP-UNIT-TESTS-CSHARP
 
 ## Setup the Top Level of your App...
 * create direactory and go into it
@@ -90,5 +95,3 @@ EG-TEXT-SETTING-UP-UNIT-TESTS-CSHARP
 * say we want to add a dependency from the current module to module called 'Used'
 * add a reference to the *used* namespace using
 * $ dotnet add <path/to>/Used.csproj
-
-EG-TEXT-SETTING-UP-UNIT-TESTS-CSHARP

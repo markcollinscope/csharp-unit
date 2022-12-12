@@ -7,8 +7,11 @@ SLIDES = $(SLIDES_DIR)/slides.html
 .PHONY: slides
 .SUFFIXES: .tdd .marp .html
 
+# set to '--vb' for debug.
+VERBOSE=
+
 %.marp: %.tpp
-	tpp $< > $@
+	tpp $(VERBOSE) $< > $@
 
 %.html: %.marp
 	marp $<
@@ -19,8 +22,8 @@ slides: $(SLIDES)
 SOURCE_DIR := $(PROJDIR)/SRC	
 
 HIDE=@
-DNC := dnclean
-DNT := dotnet test
+DNC=dnclean
+DNT=dotnet test
 
 .PHONY: clean test 
 
