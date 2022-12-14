@@ -2,7 +2,7 @@
 NB: Please use latest version - tagged:
 
 <!-- ### EG-VERSION-TAG -->
-TBD !!! TBD !!!
+	22.12.14-19.59_GITREL_V1.0.0
 <!-- ### END ### -->
 
 TBD - UPDATE REQUIRED - TBD.
