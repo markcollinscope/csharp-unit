@@ -1,19 +1,9 @@
-* tag code for release
+TODO:
+
+* Add Source Code Extract - For Exercises - only what you need ...
 * update README
-* Template GNUMakefile?
 * check below for additional .net cmd line stuff (dotnet add ...)
 * use an 'interface' in the example code ...
-
-
---- old ---
-treat tests as code
-package = namespace
-Usings.cs ?
-namespace require { } or not?
-[TestFixture]
-[ annotation ]
-
-
 
 TO COVER:
 
