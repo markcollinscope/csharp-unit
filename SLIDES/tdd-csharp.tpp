@@ -14,7 +14,7 @@ section.code {
 }
 </style>
 # A Basic Introduction to Test Driven Development in C#
-![bg right:25% 80%](./IMAGES/TDD.png)
+![bg right:25% 80%](TDD.png)
 
 - a half day mini-course
 - based on practical work
@@ -78,6 +78,7 @@ section.code {
     - Green: update the code so it works
     - Refactor: restructure the code (if necessary)
 
+NB: Sometimes make sense to Refactor first - see later.
 NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 
 ---
@@ -122,7 +123,8 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
     - $ dotnet test
 
 ---
-![bg right:100% 100%](./IMAGES/TDD-CMD-LINE-OUTPUT.png)
+# NUnit - Command Line Output
+![](TDD-CMD-OUT.png)
 
 
 ---
@@ -175,9 +177,19 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 
 ---
 # Review
-- did the tests tell you all you need to know to implement?
-- are test-based examples of *using* (not testing) a unit useful?
-- any other thoughts?
+- Did the tests tell you all you need to know to implement?
+- Are test-based examples of *using* (not testing) a unit useful?
+- Any other thoughts?
+
+
+---
+# When To Refactor
+- Some new tests require early refactoring to restructure code.
+- When new test adds a fundamental change that invalidates existing design.
+- To do this:
+	- make incremental changes.
+	- re-run existing tests until status: green.
+- Then do new test.
 
 
 ---

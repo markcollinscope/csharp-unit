@@ -39,13 +39,10 @@ Provide facilities to:
 * [story #2] get the total cost of the cart
 * [story #3] show the cart contents on UI
 
-EG-TEXT-SHOPPING-APP-UI-END
-
 in a test first manner. You can assume the UI calls the Cart, StockRepo and StockItem packages (namespaces/modules) directly for the purposes of this exercise.
 
 Eg. you might start with:
 
-EG-CODE-CART-OUTLINE-TEST
 ```
 --- Cart.Tests.cs ----
 public class Tests
@@ -64,7 +61,7 @@ public class Tests
         .... check it is the correct value
     }
 
-   ...
+   ...  etc.
 }
 
 --- end Cart.Tests.cs ---

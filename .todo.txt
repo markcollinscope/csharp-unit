@@ -1,8 +1,8 @@
-* mv slides to OUTPUT dir when html
 * tag code for release
 * update README
 * Template GNUMakefile?
 * check below for additional .net cmd line stuff (dotnet add ...)
+* use an 'interface' in the example code ...
 
 
 --- old ---

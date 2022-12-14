@@ -1,4 +1,4 @@
-# BUILD FILE FOR UNIT-TESTS and SLIDES for CSHARP-UNIT-TEST INTRO-SESSION.
+# BUILD FILE FOR UNIT-TESTS and SLIDE for CSHARP-UNIT-TEST INTRO-SESSION.
 
 PROJDIR := $(realpath $(CURDIR))
 
@@ -9,7 +9,7 @@ VERBOSE=
 HIDE=@
 
 ######################
-### SLIDES SECTION ###
+### SLIDE SECTION ###
 ######################
 
 # generate slides using a three pass pre-process approach.
@@ -27,8 +27,9 @@ SLIDES_SRC = $(PROJDIR)/SLIDES
 SLIDES_TARGET_DIR = $(PROJDIR)/HTML-SLIDE-PRESENTATION
 
 # setup up overall target - all named-slides in target output dir.
-SLIDES_NAMES=tdd-csharp.html
-SLIDES=$(foreach target, $(SLIDES_NAMES), $(SLIDES_TARGET_DIR)/$(target))
+SLIDES_NAMES=tdd-csharp.html 
+SLIDES_IMAGES=TDD-CMD-OUT.png TDD.png
+SLIDES=$(foreach target, $(SLIDES_NAMES) $(SLIDES_IMAGES), $(SLIDES_TARGET_DIR)/$(target))
 
 # build rules and targets
 .PHONY: slides
@@ -36,6 +37,10 @@ SLIDES=$(foreach target, $(SLIDES_NAMES), $(SLIDES_TARGET_DIR)/$(target))
 
 ## DEFAULT TARGET ##
 slides: $(SLIDES)
+
+# generate .marp files using the .tpp equivalents as input.
+%.marp: %.tpp
+	tpp $(VERBOSE) $< > $@
 
 # build a .html file by running marp on the equivalent .marp 'input' file.
 %.html:	%.marp
@@ -46,10 +51,9 @@ $(SLIDES_TARGET_DIR)/%.html: %.html
 	mkdir -p $(SLIDES_TARGET_DIR)
 	mv $< $@
 
-# generate .marp files using the .tpp equivalents as input.
-%.marp: %.tpp
-	tpp $(VERBOSE) $< > $@
-
+# to 'build' an image (png) file in the target dir, just copy from slide src dir.
+$(SLIDES_TARGET_DIR)/%.png:	$(SLIDES_SRC)/%.png
+	cp $< $@
 
 ###########################
 ### SOURCE CODE SECTION ###
@@ -73,6 +77,6 @@ test::
 all: 	slides test
 
 clean::
-	$(HIDE)cd $(SOURCE_DIR); echo "Cleaning: $$(pwd)"; eval $(DNC);
-	$(HIDE)echo 'Cleaning $(SLIDES_TARGET_DIR)';  rm -f $(SLIDES)
+	cd $(SOURCE_DIR); eval $(DNC);
+	rm -f $(SLIDES)
 
