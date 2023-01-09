@@ -1,14 +1,19 @@
 TODO:
 
-* Add Source Code Extract - For Exercises - only what you need ...
+- TAG FOR APPIES. NEW REL.
+- Add Exercise 1 - explanation!
+- More notes on Exercise 2 - Create Cart and Cart.Tests
+
 * update README
+* use an 'interface' in the example code ... ???
+?  [annotations Setup ... TestFixture] - or just note!
+? Assert.Etc()
+
+DONE:
+* Add Source Code Extract - For Exercises - only what you need ...
 * check below for additional .net cmd line stuff (dotnet add ...)
-* use an 'interface' in the example code ...
 
-TO COVER:
-
-[annotations Setup ... TestFixture]
-Assert.Etc()
+HISTORICAL NOTES:
 
 history | grep dotnet
   857  dotnet new classlib
@@ -47,3 +52,4 @@ history | grep dotnet
 - dotnet add ClassDir.Tests/ClassDir.Tests.csproj
 
 - dotnet test!
+
