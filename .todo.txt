@@ -1,12 +1,23 @@
-TODO:
+TODO LIST CSHARP TDD COURSE =>
 
-- TAG FOR APPIES. NEW REL.
-- Add Exercise 1 - explanation!
-- More notes on Exercise 2 - Create Cart and Cart.Tests
+BUGS:
+-	Ex 2 - list of test functions is wrong - 1st is wrong.
+-	check earlier slides for typos.
+- 	Add Exercise 1 - explanation-bit...
 
-* update README
-* use an 'interface' in the example code ... ???
-?  [annotations Setup ... TestFixture] - or just note!
+WANT-TO-DO:
+-	Add 'STRIP' command to 'tpp' (or Extract ...).
+
+IMPORTANT:
+- 	setup on exercises. .sln etc. removing unnecessary files. must be smooth... smooth...
+- 	TAG FOR APPIES. NEW REL.
+- 	More notes on Exercise 2 - Create Cart and Cart.Tests
+
+* update README:
+
+???- NICE-TO-HAVE:
+* use an 'interface' in the example code ... ??? Dependency Inversion?
+? [annotations Setup ... TestFixture] - or just note! ??? WHAT DOES THIS MEAN?
 ? Assert.Etc()
 
 DONE:
