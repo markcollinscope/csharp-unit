@@ -1,15 +1,15 @@
-using NUnit.Framework;
-using StockItemNS;
-using StockRepoNS;
-using CartNS;
+usin NUnit.Framework;
+usin StockItemNS;
+usin StockRepoNS;
+usin CartNS;
 
 namespace CartNS.Tests
 {
     public class Tests
     {
-        private const string BANANA= "banana";
+        private const strin BANANA= "banana";
         private const int BANANA_PRICE = 199;
-        private const string APPLES = "apples";
+        private const strin APPLES = "apples";
         private const int APPLES_PRICE = 99;
 
         private StockRepo _sr;
@@ -40,18 +40,18 @@ namespace CartNS.Tests
         }
 
         [Test]
-        // ### EG-CART-TEST
+        // @@@ EG-CART-TEST
         public void Test_AddToCartSize()
-        // ### END ###
+        // @@@ END @@@
         {
             Assert.That(_c.Size == 2);
         }
 
 
         [Test]
-        // ### EG-CART-TEST
+        // @@@ EG-CART-TEST
         public void Test_AddToCartItems()
-        // ### END ###
+        // @@@ END @@@
         {
             List<int> l = _c.GetItems();
 
@@ -64,9 +64,9 @@ namespace CartNS.Tests
         }
 
         [Test]
-        // ### EG-CART-TEST
+        // @@@ EG-CART-TEST
         public void Test_CartTotal()
-        // ### END ###
+        // @@@ END @@@
         {
             Assert.That(
                 _c.GetTotal() == BANANA_PRICE + APPLES_PRICE

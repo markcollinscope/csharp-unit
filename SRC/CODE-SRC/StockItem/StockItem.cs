@@ -1,4 +1,4 @@
-﻿// EG-CODE-STOCKITEM ### for extraction.
+﻿// EG-CODE-STOCKITEM @@@ for extraction.
 namespace StockItemNS;
 
 public class StockItem
@@ -16,4 +16,4 @@ public class StockItem
         this.Name = name;
     }
 }
-// ### END ###
+// @@@ END @@@

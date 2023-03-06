@@ -1,9 +1,9 @@
 # Unit Testing Exercise
 NB: Please use latest version - tagged:
 
-<!-- ### EG-VERSION-TAG -->
+<!-- @@@ EG-VERSION-TAG -->
 	22.12.14-19.59_GITREL_V1.0.0
-<!-- ### END ### -->
+<!-- @@@ END @@@ -->
 
 TBD - UPDATE REQUIRED - TBD.
 
@@ -14,7 +14,7 @@ The basic idea is as follows (in terms of steps for the exercise):
 
 [ Removing item from StockRepo ]
 
-<!-- ### EG-CART-EXERCISE-UI -->
+<!-- @@@ EG-CART-EXERCISE-UI -->
 ```
 -----------------------------------------------------
 |                   Shopping App                    |
@@ -32,7 +32,7 @@ The basic idea is as follows (in terms of steps for the exercise):
 -----------------------------------------------------      
 
 ```
-<!-- ### END ### UI -->
+<!-- @@@ END @@@ UI -->
 
 Provide facilities to:
 * [story #1] add items to the cart             
