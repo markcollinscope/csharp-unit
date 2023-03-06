@@ -1,5 +1,16 @@
 # BUILD FILE FOR UNIT-TESTS and SLIDES (PRESENTATION) for CSHARP-UNIT-TEST INTRO-SESSION.
+
 default-target: all
+
+s:	slides
+e1:	exercise1
+e2:	exercise2
+t:	test
+c:	clean
+
+help::
+	@head -10 Makefile
+
 
 PROJDIR := $(realpath $(CURDIR))
 

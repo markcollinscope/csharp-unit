@@ -1,15 +1,15 @@
-usin NUnit.Framework;
-usin StockItemNS;
-usin StockRepoNS;
-usin CartNS;
+using NUnit.Framework;
+using StockItemNS;
+using StockRepoNS;
+using CartNS;
 
 namespace CartNS.Tests
 {
     public class Tests
     {
-        private const strin BANANA= "banana";
+        private const string BANANA= "banana";
         private const int BANANA_PRICE = 199;
-        private const strin APPLES = "apples";
+        private const string APPLES = "apples";
         private const int APPLES_PRICE = 99;
 
         private StockRepo _sr;
