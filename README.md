@@ -2,12 +2,11 @@
 NB: Please use latest version - tagged:
 
 <!-- ### EG-VERSION-TAG -->
-	22.12.14-19.59_GITREL_V1.0.0
+LATEST RELEASE VERSION: 22.12.14-19.59_GITREL_V1.0.0
 <!-- ### END ### -->
 
-TBD - UPDATE REQUIRED - TBD.
+Solution code is provided here to a unit testing exercise in csharp. But try not to look at it unless you get stuck.
 
-Solution code is provided here to a unit testing exercise in csharp.
 The basic idea is as follows (in terms of steps for the exercise):
 * take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
 * extend this implementation with a Cart providing services to implement the following 'UI' design:
