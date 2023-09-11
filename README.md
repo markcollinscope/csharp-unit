@@ -2,7 +2,7 @@
 NB: Please use latest version - tagged:
 
 <!-- ### EG-VERSION-TAG -->
-LATEST RELEASE VERSION: 22.12.14-19.59_GITREL_V1.0.0
+LATEST RELEASE VERSION: 23.09.11-19.17_GITREL_V1.0.1
 <!-- ### END ### -->
 
 Solution code is provided here to a unit testing exercise in csharp. But try not to look at it unless you get stuck.
