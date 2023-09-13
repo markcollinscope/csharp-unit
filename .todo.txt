@@ -1,3 +1,35 @@
+
+START
+Having got all the basic setup (see git log) --
+Have a baselined copy of the two dirs directory structure - stored seperately & copy into targets.
+
+- copy the pre-existing source code files (StockItem.cs, StockRepo.Tests.cs) into releveant dirs
+- remove files Class1.cs ... etc. for dirs
+
+- create the template solution file StockRepo.cs
+	- namespace etc
+	- implementation class
+	- empty bar a NotImpl example. ... some instructions? <put this in data subdirectory cp it in>
+
+$ dotnet add .../StockRepo.Tests.csproj .../StockRepo.csproj <change for exercise two>
+
+$ dotnet sln add ./StockRepo.Tests/StockRepo.Tests.csproj
+
+DONE.
+
+SRC/CODE-SRC/
+	<2>
+	Cart.Tests/Cart.Tests.cs
+	Cart/Cart.cs
+
+	<1 & 2>
+	StockRepo.Tests/StockRepo.Test.cs
+	StockRepo/StockRepo.cs
+	StockItem/StockItem.cs
+
+NEXT MANUAL WORKING OF IT!
+***
+
 TODO LIST CSHARP TDD COURSE =>
 
 BUGS:
