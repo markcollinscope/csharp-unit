@@ -29,6 +29,7 @@ Note 2: The [Test] of StockItem - the first test in the StockRepo.Tests are - sh
 ### Exercise 2
 
 Either extend, or rewrite (up to you) this implementation but add a Cart class providing services to implement the following 'UI' design:
+
 <!-- ### EG-CART-EXERCISE-UI -->
 ```
 -----------------------------------------------------
@@ -49,19 +50,23 @@ Either extend, or rewrite (up to you) this implementation but add a Cart class p
 ```
 <!-- ### END ### UI -->
 
+Note: We're not going to implement this UI - just the 'Cart' class functions it needs.
+
 So:
-* firstly - work out what functions the Cart will need to have.
+* firstly - work out what functions the Cart will need to have (hint: see below):
 * secondly - work out if there are any additional function necessary in the StockRepo class.
 * then: iteratively create any new tests required to test any new StockRepo functions you need.
 * then: iteratively create Cart.Tests are with tests (one at a time) and implement them until they pass in the Cart class.
 
 
-Provide facilities to:
+Note: you will need to provide facilities to:
 * [story #1] add items to the cart             
 * [story #2] get the total cost of the cart
 * [story #3] show the cart contents on UI
 
-in a test first manner. You can assume the UI calls the Cart, StockRepo and StockItem packages (namespaces/modules) directly for the purposes of this exercise.
+in a test first manner. 
+
+You can assume the UI calls the Cart, StockRepo and StockItem packages (namespaces/modules) directly for the purposes of this exercise.
 
 Eg. you might start with:
 
