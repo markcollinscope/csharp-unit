@@ -5,7 +5,17 @@ NB: Please use latest version - tagged:
 LATEST RELEASE VERSION: 23.09.11-19.17_GITREL_V1.0.1
 <!-- ### END ### -->
 
-Solution code is provided here to a unit testing exercise in csharp. But try not to look at it unless you get stuck.
+## Exercises
+This presentation comes with exercises which a detailed below.
+
+## Where to find the source code *used* as part of the Exercises
+See the EXERCISE-SRC-XDIR folder/directory at the top level of the repo.
+
+### Solutions
+A set of one possible example solutions - in code format - is provided here to the exervises below unit testing exercise in csharp. 
+Try not to look at it unless you get stuck - but if you're blocked, feel free.
+
+### Exercise 1
 
 The basic idea is as follows (in terms of steps for the exercise):
 * take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
