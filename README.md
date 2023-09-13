@@ -10,19 +10,25 @@ This presentation comes with exercises which a detailed below.
 
 ## Where to find the source code *used* as part of the Exercises
 See the EXERCISE-SRC-XDIR folder/directory at the top level of the repo.
-
-### Solutions
-A set of one possible example solutions - in code format - is provided here to the exervises below unit testing exercise in csharp. 
-Try not to look at it unless you get stuck - but if you're blocked, feel free.
+THere is one sub-directory per exercise.
 
 ### Exercise 1
+The exercise directory contains two sub-dirs - one for a pre-existing StockItem class, and a TDD file - StockRepo.Tests. You have to create a StockRepo class that passes the tests in the StockRepo.Tests director.
 
-The basic idea is as follows (in terms of steps for the exercise):
-* take the StockRepo.Tests class, and the StockItem class and write a working implementation of StockRepo that passes its tests - requires: StockRepo.Tests.cs, StockItem.csand outline StockRepo.cs (optional to provide).
-* extend this implementation with a Cart providing services to implement the following 'UI' design:
+So:
+* take the StockRepo.Tests class, and the StockItem class
+* taking each [Test] in StockRepo.Tests - one at a time - write a working implementation of StockRepo that passes that test.
+* add another [Test] and get that to pass.
+* and so on.
 
-[ Removing item from StockRepo ]
+Note 1: that you have to have *all* the tests passing, not just the 'latest' one you've implemented.
+You may well have to refactor your implementation code as you add tests.
 
+Note 2: The [Test] of StockItem - the first test in the StockRepo.Tests are - should just pass - the code is provided in the StockItem area.
+
+### Exercise 2
+
+Either extend, or rewrite (up to you) this implementation but add a Cart class providing services to implement the following 'UI' design:
 <!-- ### EG-CART-EXERCISE-UI -->
 ```
 -----------------------------------------------------
@@ -42,6 +48,13 @@ The basic idea is as follows (in terms of steps for the exercise):
 
 ```
 <!-- ### END ### UI -->
+
+So:
+* firstly - work out what functions the Cart will need to have.
+* secondly - work out if there are any additional function necessary in the StockRepo class.
+* then: iteratively create any new tests required to test any new StockRepo functions you need.
+* then: iteratively create Cart.Tests are with tests (one at a time) and implement them until they pass in the Cart class.
+
 
 Provide facilities to:
 * [story #1] add items to the cart             
