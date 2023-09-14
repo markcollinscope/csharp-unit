@@ -12,6 +12,7 @@ CODE_SRC := 			$(PROJDIR)/SRC/CODE-SRC
 VERBOSE=
 HIDE=@
 VPATH=$(SLIDES_SRC) $(CODE_SRC)
+.ONESHELL:
 
 ######################
 ### SLIDE SECTION ###
@@ -54,16 +55,25 @@ $(SLIDES_OUTPUT_DIR)/%.png:	$(SLIDES_SRC)/%.png
 EX1_DIR :=		$(EXERCISE_OUTPUT_SRC)/EXERCISE-1
 EX2_DIR :=		$(EXERCISE_OUTPUT_SRC)/EXERCISE-2
 
-EX1_SRC :=		StockItem StockRepo.Tests
-EX2_SRC :=		StockItem StockRepo StockRepo.Tests
+EX1_REPLACE :=	StockRepo/StockRepo.cs
+EX1_DELETE  :=  Cart Cart.Tests
 
-exercise1:	$(EX1_SRC)
-	mkdir -p $(EX1_DIR)
-	cp -r $^ $(EX1_DIR)
+EX2_REPLACE :=	Cart/Cart.cs Cart.Tests/Cart.Tests.cs
 
-exercise2: 	$(EX2_SRC)
-	mkdir -p $(EX2_DIR)
-	cp -r $^ $(EX2_DIR)
+exercise1::
+	mkdir -p $(EXERCISE_OUTPUT_SRC);
+	rm -rf $(EX1_DIR);
+	cp -r $(CODE_SRC) $(EX1_DIR);
+	cd $(EX1_DIR);
+	rm -rf $(EX1_DELETE);
+	for i in $(EX1_REPLACE); do echo $$i ' - SOLUTION STUB FILE - PUT YOUR SOLUTION IN HERE' > $$i; done
+
+exercise2::
+	mkdir -p $(EXERCISE_OUTPUT_SRC);
+	rm -rf $(EX2_DIR);
+	cp -r $(CODE_SRC) $(EX2_DIR);
+	cd $(EX2_DIR);
+	for i in $(EX2_REPLACE); do echo $$i ' - SOLUTION STUB FILE - PUT YOUR SOLUTION IN HERE' > $$i; done
 
 exercises: exercise1 exercise2
 
