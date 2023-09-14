@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo/StockRepo.csproj",
+      "projectUniqueName": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/StockRepo.csproj",
       "projectName": "StockRepo",
-      "projectPath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo/StockRepo.csproj",
+      "projectPath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/StockRepo.csproj",
       "packagesPath": "/home/mark/.nuget/packages/",
-      "outputPath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo/obj/",
+      "outputPath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mark/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj": {
-              "projectPath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj"
+            "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj": {
+              "projectPath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj"
             }
           }
         }

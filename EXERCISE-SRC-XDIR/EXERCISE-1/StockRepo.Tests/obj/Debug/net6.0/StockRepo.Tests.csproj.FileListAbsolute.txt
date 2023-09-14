@@ -101,6 +101,3 @@
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.pdb
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.genruntimeconfig.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/ref/StockRepo.Tests.dll
-/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.dll
-/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo.Tests/obj/Debug/net6.0/refint/StockRepo.Tests.dll
-/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.pdb

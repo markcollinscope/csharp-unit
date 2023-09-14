@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lin5xamsnj/DecThtMoZ76WE1+bnv0qaN/g47WZLxYHLyjX42PBsXC0zLYtnk6Scdcv3nTWkq6Ym72rb+I56/Q==",
+  "dgSpecHash": "SWBmP5L8KWwQwn6/IiyY7s9xkoczyGTSYKc4j0JoK8eepqLZZDldQ6CeLYhafueJa4g6h1IplakDuegB/KYUJA==",
   "success": true,
-  "projectFilePath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj",
+  "projectFilePath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

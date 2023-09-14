@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj": {}
+    "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj": {}
   },
   "projects": {
-    "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj": {
+    "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj",
+        "projectUniqueName": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj",
         "projectName": "StockItem",
-        "projectPath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/StockItem.csproj",
+        "projectPath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj",
         "packagesPath": "/home/mark/.nuget/packages/",
-        "outputPath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockItem/obj/",
+        "outputPath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mark/.nuget/NuGet/NuGet.Config"

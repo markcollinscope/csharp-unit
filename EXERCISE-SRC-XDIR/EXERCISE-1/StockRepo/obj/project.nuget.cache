@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QLmpyapRulhztKrGVymhmo4sOc3GyzDDYikFi6TiXTTZlvFpLp+8ScX5JRY3NP8Ez/eWX3X3rAz2Y3KwTIGJxQ==",
+  "dgSpecHash": "fcwJaMviHiOvryboYsrvByhchhK+LkyPe0IiU+36dWf1YkdwNnnkAVpyI50sJrnIl6z8RQYGaG34th7yUNYCdA==",
   "success": true,
-  "projectFilePath": "/home/mark/GIT/csharp-unit/EXERCISE-SRC-XDIR/EXERCISE-1/StockRepo/StockRepo.csproj",
+  "projectFilePath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/StockRepo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
