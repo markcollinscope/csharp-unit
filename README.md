@@ -5,6 +5,8 @@ NB: Please use latest version - tagged:
 LATEST RELEASE VERSION: 23.09.11-19.17_GITREL_V1.0.1
 <!-- ### END ### -->
 
+See later in README for contents of repo, navigation, etc.
+
 ## Exercises
 This presentation comes with exercises which a detailed below.
 
@@ -94,7 +96,7 @@ public class Tests
 --- end Cart.Tests.cs ---
 ```
 
-# Notes on setting up Unit Testing in CSharp.
+## Notes on setting up Unit Testing in CSharp.
 
 Some notes on basic command line dotnet commands to set up a project for TDD are found below.
 However the best description I've seen to far is:
@@ -124,3 +126,18 @@ However the best description I've seen to far is:
 * say we want to add a dependency from the current module to module called 'Used'
 * add a reference to the *used* namespace using
 * $ dotnet add <path/to>/Used.csproj
+
+# REPO CONTENTS INFORMNATION
+## Top Level Files
+* Makefile - used to build presentation and other generated contents. Type '$ make;' to build in top level directory. See file contents for other build targets.
+* README.md - this file.
+
+## Directory Contents
+nb: XDIR generally indicates an output directory - generated automatically.
+
+* SRC - two sections:
+	* CODE-SRC - source code of solutions to exercise, also used to generate stubs for exercises.
+	* SLIDES-SRC - source code for presentation in 'marp' format.
+* EXERCISE-SRC-XDIR - solution stubs / pre-supplied source code.
+* HTML-SLIDE-PRESENTATION-XDIR - output of presentation. See 'tdd-csharp.htmkl' - to present - load it in a browser. That's it.
+
