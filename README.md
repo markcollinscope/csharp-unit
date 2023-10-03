@@ -96,6 +96,11 @@ public class Tests
 
 # Notes on setting up Unit Testing in CSharp.
 
+Some notes on basic command line dotnet commands to set up a project for TDD are found below.
+However the best description I've seen to far is:
+* https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test
+* just remember: swap 'xunit' with *nunit*.
+
 ## Setup the Top Level of your App...
 * create direactory and go into it
 * create a new solution using:
