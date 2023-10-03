@@ -96,3 +96,44 @@ history | grep dotnet
 
 - dotnet test!
 
+
+******************
+Part 2 of the TDD CSharp Course.
+
+*** NB: Pre-course Preparation. ***
+- clone and checkout latest version of course (I update it on the fly continuously when I give it).
+- watch the video (20 mins) - may assist as well!
+- recap your exercise 1 work - what was easy, what was confusing ...
+- Think of questions - any at all: 'why are we doing this?', 'why should we write the tests first?', etc... anything. 
+  Especially the questions you're possibly 'embarassed' to ask - they're the ones everyone generally has but no one mentions!
+
+DETAILS BELOW:
+
+Please:
+** checkout the updated course from github - clone repo:
+   https://github.com/markcollinscope/csharp-unit.git
+
+** then use Branch (actually a Tag): 23.09.11-19.17_GITREL_V1.0.1
+
+  - releases of the course are tagged using the format above - see the README file on GitHub - 
+  it always says what the latest 'release' version of the course.
+
+  - to view the README file in a browser (please do this) - just go to URL:
+  https://github.com/markcollinscope/csharp-unit
+  
+  - README - 'read me' files are just a convention used in many projects, in which README.md or README.txt 
+  or similar contain introduction/installation instructions for people new to a project.
+
+  - you should do one for the apprentice-project - which explains how someone techie should navigate 
+  and use the repo.
+
+** Checkout this video on YouTube:
+   - https://www.youtube.com/watch?v=yfP_v6qCdcs - Dave Farley of Continuous Delivery Channel.
+   Don't ask me why everything has to have a Japanese name (Dojo) - but it seems popular! :).
+
+** Be prepared to chat about your experiences and code from Exercise 1. 
+   - this is just about being honest. There's no 'right' answer - just experiential and what you ended up doing.
+   - can do this as a group or in pairs if you like - your call.
+
+***
+
