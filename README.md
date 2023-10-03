@@ -127,7 +127,7 @@ However the best description I've seen to far is:
 * add a reference to the *used* namespace using
 * $ dotnet add <path/to>/Used.csproj
 
-# REPO CONTENTS INFORMNATION
+# Repo Contents
 ## Top Level Files
 * Makefile - used to build presentation and other generated contents. Type '$ make;' to build in top level directory. See file contents for other build targets.
 * README.md - this file.
