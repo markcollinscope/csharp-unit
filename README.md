@@ -2,7 +2,7 @@
 NB: Please use latest version - tagged:
 
 <!-- ### EG-VERSION-TAG -->
-LATEST RELEASE VERSION: 23.09.11-19.17_GITREL_V1.0.1
+LATEST RELEASE VERSION: 23.10.03-19.26_GITREL_V1.0.2
 <!-- ### END ### -->
 
 See later in README for contents of repo, navigation, etc.
