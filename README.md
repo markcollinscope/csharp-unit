@@ -139,5 +139,5 @@ nb: XDIR generally indicates an output directory - generated automatically.
 	* CODE-SRC - source code of solutions to exercise, also used to generate stubs for exercises.
 	* SLIDES-SRC - source code for presentation in 'marp' format.
 * EXERCISE-SRC-XDIR - solution stubs / pre-supplied source code.
-* HTML-SLIDE-PRESENTATION-XDIR - output of presentation. See 'tdd-csharp.htmkl' - to present - load it in a browser. That's it.
+* HTML-SLIDE-PRESENTATION-XDIR - output of presentation. See 'tdd-csharp.html' - to present - load it in a browser. That's it.
 
