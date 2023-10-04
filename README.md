@@ -7,6 +7,11 @@ LATEST RELEASE VERSION: 23.10.03-19.26_GITREL_V1.0.2
 
 See later in README for contents of repo, navigation, etc.
 
+## Slide Presentation
+Go to the HTML-SLIDE-PRESENTATION-XDIR directory.
+See the 'tdd-csharp.html' file.
+To view as slides - simply load that file into a browser directory (control-o in Chrome).
+
 ## Exercises
 This presentation comes with exercises which a detailed below.
 
