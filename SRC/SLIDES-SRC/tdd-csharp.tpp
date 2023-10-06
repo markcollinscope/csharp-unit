@@ -3,8 +3,8 @@ marp: true
 theme: gaia
 class: invert
 paginate: true
-footer: Intro to TDD in C#
-header: R2C Online      
+footer: Basics of TDD in C# - An Introduction
+header: Epyx/R2C
 backgroundColor: darkblue
 color: yellow
 ---
@@ -45,7 +45,7 @@ section.code {
 - See: https://github.com/markcollinscope/csharp-unit
 - Please use version tagged:
 
-[[bash-exec: extract EG-VERSION-TAG \*.md ]]
+[[bash-exec: extract --old EG-VERSION-TAG \*.md ]]
 
 - $ git checkout <tag-as-per-above>
 
@@ -131,7 +131,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Example Code - CSharp Nunit Tests
 ```
-[[bash-exec: extract  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
+[[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
 ```
 
 
@@ -139,7 +139,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Exercise 1 - Background - StockItem Class
 ```
-[[bash-exec: extract EG-CODE-STOCKITEM \*.cs ]]
+[[bash-exec: extract --old EG-CODE-STOCKITEM \*.cs ]]
 ```
 
 
@@ -147,7 +147,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Exercise 1 - Background - Pre-Defined Tests - 1
 ```
-[[bash-exec: extract  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
+[[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
 ```
 
 
@@ -155,7 +155,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Exercise 1 - Background - Pre-Defined Tests - 2
 ```
-[[bash-exec: extract  EG-CODE-STOCKREPO-UT-2 \*.cs ]]
+[[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-2 \*.cs ]]
 ```
 
 
@@ -163,7 +163,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Exercise 1 - Background - Pre-Defined Tests - 3
 ```
-[[bash-exec: extract  EG-CODE-STOCKREPO-UT-3 \*.cs ]]
+[[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-3 \*.cs ]]
 ```
 
 
@@ -171,7 +171,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 <!-- _class: code -->
 # Exercise 1 - Background - Pre-Defined Tests - 4
 ```
-[[bash-exec: extract  EG-CODE-STOCKREPO-UT-4 \*.cs ]]
+[[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-4 \*.cs ]]
 ```
 
 
@@ -211,17 +211,17 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 (depends on)  | (implements)
      |        _
      v        v
-| interface (C#)|
+| an_interface|
 
 ```
-
-- *Always* use this approach?
+- 'unit-code' 'using' (depends on / uses / imports) 'an_interface'
+- 'implementation'/'mock implementation' implement 'an_interface'
 
 
 ---
 <!-- _class: code -->
 # Exercise 2 - Background - UI 'Design'
-[[bash-exec: extract  EG-CART-EXERCISE-UI \*.md ]]
+[[bash-exec: extract --old  EG-CART-EXERCISE-UI \*.md ]]
 
 
 ---
@@ -238,7 +238,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 ---
 <!-- _class: code -->
 # Exercise 2 - Tests To Write
-[[bash-exec: extract EG-CART-TEST \*.cs ]]
+[[bash-exec: extract --old EG-CART-TEST \*.cs ]]
 
 
 ---
