@@ -3,24 +3,42 @@ marp: true
 theme: gaia
 class: invert
 paginate: true
+font-size: 12
 footer: Basics of TDD in C# - An Introduction
 header: Epyx/R2C
 backgroundColor: darkblue
 color: yellow
 ---
 <style>
+h1 {
+  font-size: 28pt;
+}
+
+ul, li {
+  font-size: 22pt;
+}
+
 section.code {
 	font-size: 20pt;
 }
 </style>
-# A Basic Introduction to Test Driven Development in C#
+# Beginners Introduction to Test Driven Development in C#
 ![bg right:25% 80%](TDD.png)
 
 - a half day mini-course
 - based on practical work
 - with a bit of theory
+- NB: gives a 'flavour' of TDD - as an introduction only
 
-
+---
+# Pre-requisites
+- A basic understanding of how to test a function/procedure/method something like:
+    - e.g. string function fizzbuzz(int n) returns an empty string ("") or:
+    - "fizz" if 'n' is divisible exactly by 3.
+    - "buzz" if 'n' is divisible exactly by 5.
+    - "fizz buzz" if both conditions hold.
+- A basic understanding of 'Assertions'
+    - e.g. Assert(x == 10) - throws test exceptions if x != 10.
 ---
 # Objectives
 - Demonstrate what are unit tests.
@@ -72,20 +90,20 @@ section.code {
 
 
 ---
-# The TDD Mantra (New Code)
-- Write the test (one test at a time)
-    - Red: write the code so it fails (i.e. minimal)
-    - Green: update the code so it works
-    - Refactor: restructure the code (if necessary)
+# The TDD Mantra - Red Green Refactor (New Code)
+- When developing a new function:
+- write a test (one test at a time)
+    - Red (fail): implement the function so the code compiles and the test fails.
+    - Green (pass): update the code so the test passes.
+    - Then Refactor: restructure the code (if necessary) - so the test still passes.
 
-NB: Sometimes make sense to Refactor first - see later.
 NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 
 ---
 # The TDD Mantra (Bugs)
-- write a test to isolate the bug (red)
-- fix the bug (green)
-- refactor if necessary... unit tests facilitate this!
+- write a test to isolate the bug (Red)
+- fix the bug (Green)
+- refactor if necessary...
 
 
 ---
@@ -96,6 +114,7 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
     - Identify packages (units).
     - Ensure dependencies are clean.
     - Start TDD with chosen packages...
+- But: that's a huge subject beyond the scope here!
 
 
 ---
@@ -109,10 +128,11 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 # Basics of NUnit for C# - 1
 - Set up a CSharp dotnet project: 
     - $ dotnet new sln
-- Create sub-directory for each unitL
+- Create sub-directory for each unit
     - $ dotnet new classlib
-- Create sub-directory for tests (rename files):
+- Create sub-directory for tests
     - $ dotnet new nunit
+- NB: rename files as necessary
 
 
 ---
@@ -123,8 +143,15 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
     - $ dotnet test
 
 ---
-# NUnit - Command Line Output
+# NUnit - Output When Run On Command Line
 ![](TDD-CMD-OUT.png)
+
+
+---
+# Exercise 1 - Task
+- using the code provided - top level directory 'Exercise 1'
+- implement the StockRepo class to pass the tests defined 
+- see following slides...
 
 
 ---
@@ -133,9 +160,8 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 ```
 [[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-1 \*.cs ]]
 ```
-
-
 ---
+
 <!-- _class: code -->
 # Exercise 1 - Background - StockItem Class
 ```
@@ -174,48 +200,47 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
 [[bash-exec: extract --old  EG-CODE-STOCKREPO-UT-4 \*.cs ]]
 ```
 
+---
+# Exercise Review
+- Did the tests tell you all you need to know to implement the required function(s)?
+- What was easy?
+- What was hard?
+- It's a different 'mind-set' - so expect it to be challenging.
 
 ---
-# Review
-- Did the tests tell you all you need to know to implement?
-- Are test-based examples of *using* (not testing) a unit useful?
-- Any other thoughts?
-
-
----
-# When To Refactor
-- Some new tests require early refactoring to restructure code.
-- When new test adds a fundamental change that invalidates existing design.
+# Refactoring
+- Refactoring: changing the structure of code without changing the functionality.
+- Some new tests - i.e. new functionality - may require early refactoring to restructure code.
 - To do this:
 	- make incremental changes.
 	- re-run existing tests until status: green.
+    - loop until you're happy with new code structure.
 - Then do new test.
-
+- Red Green Refactor vs Refactor Red Green ...
 
 ---
-# Mocking vs Integration Testing - 1
+# Brief notes on 'mocking' interfaces - 1
 - Testing more than one unit is (strictly speaking) 'integration' testing.
 - How can you test one unit when it "depends on" or "imports from ..." another?
 - Can 'mock' the interface of the unit being dependended on.
 - Requires 'dependency inversion' - as per *SOLID*.
 
-
 ---
-# Mocking vs Integration Testing - 2
+# Brief notes on 'mocking' interfaces - 2
 
 ```
-| unit-code |   | implementation |   | mock implementation |
-     |                |                       |
-     |        ---------------------------------
-     |        |
-(depends on)  | (implements)
-     |        _
-     v        v
-| an_interface|
+    | unit-code |   | implementation |   | mock implementation |
+            |                |                       |
+            |        ---------------------------------
+            |        |
+    (uses)  |        | (implements)
+            |        |
+            v        v
+          | an interface |
 
 ```
-- 'unit-code' 'using' (depends on / uses / imports) 'an_interface'
-- 'implementation'/'mock implementation' implement 'an_interface'
+- 'unit-code' 'using' (depends on / uses / imports) 'an interface'
+- 'implementation' AND 'mock implementation' both implement 'an interface'
 
 
 ---
@@ -254,10 +279,10 @@ NB: Tests are first class code - no shortcuts, "oh it's only testing..."
     - focus on external interface to unit emphasised (so better interface)
     - provides example code 'using' the unit in question.
     - facilitates reliable refactoring.
-    - shows when modifications outside the tested unit cause bugs.
+    - and - of course - shows if changes to code introduce new bugs ... 
+    - (regression testing)
 - Cons:
     - time!
-
 
 ---
 # What We Haven't Discussed
