@@ -1,0 +1,31 @@
+Hi Mark, here are my thoughts on the presentation (I haven't looked at the source code):
+
+Basic intro C# infrastructure. => Basic intro to C# infrastructure. (though I'm not sure what C# infrastructure is yet...)
+ 
+What's the difference between
+How to implement code based on given tests
+and
+How to write code from scratch using TDD approach (test code first)
+?
+ 
+write code to implement a gives set => write code to implement a given set
+ 
+On "Locations of Materials", where you link to the repo, you could link directly to the tree for that tag to reduce the chance of a pupil looking at the wrong version: https://github.com/markcollinscope/csharp-unit/tree/23.09.11-19.17_GITREL_V1.0.1
+ 
+Pressing the right arrow on tdd-csharp.html#4 takes you to tdd-csharp.html?f=1#4, then tdd-csharp.html?f=2#4, then ..., then tdd-csharp.html?f=27#4 and finally tdd-csharp.html#5
+There's no visible change on the slide as we're navigating through those values for "f".
+ 
+I think "Red: write the code so it fails (i.e. minimal)" might be clearer if expressed along the lines of "Red: write minimal code so it compiles (but the test still fails)".
+ 
+And perhaps "Green: update the code so it works" should be "Green: make the simplest change to the code so this test and the previous ones pass". Otherwise people might treat it as a "draw the rest of the owl" instruction ;)
+ 
+"Create sub-directory for each unitL" => "Create sub-directory for each unit"
+ 
+In the example code, rather than "Assert.That( si.Name == NAME );" I'd recommend Assert.AreEqual or similar. That way the test framework can usually present the expected and actual values as text if there's a failure.
+ 
+On "Exercise 2 - Background - UI 'Design'" the increasing "f" parameter thing occurs again.
+ 
+IMO one of the cons of extensive testing at the unit level is actually discouraging refactoring sometimes- if you want to make a sweeping change, the thought of having to re-write many tests can put you off. That's why I favour higher-level testing of the desired behaviour of the system. My ideal mix would be comprehensive testing of the system's behaviour, with unit tests added whenever a bug is discovered.
+ 
+Also IMO, faking is usually preferable to mocking (as in, creating simple implementations of interfaces rather than specifying "this method should be called this many times with these values")
+Maybe include that in "What We Haven't Discussed".
