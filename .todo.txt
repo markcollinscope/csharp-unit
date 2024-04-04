@@ -1,5 +1,7 @@
 TODO LIST CSHARP TDD COURSE =>
 
+FIRST THING: Sort out BRANCHES => Remove-Hash ...
+
 BUGS:
 -	Ex 2 - list of test functions is wrong - 1st is wrong.
 -	check earlier slides for typos.
