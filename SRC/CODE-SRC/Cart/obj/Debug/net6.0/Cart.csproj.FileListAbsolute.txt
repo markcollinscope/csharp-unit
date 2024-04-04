@@ -10,8 +10,9 @@
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.AssemblyInfoInputs.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.AssemblyInfo.cs
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.csproj.CoreCompileInputs.cache
-/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.csproj.CopyComplete
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/refint/Cart.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.pdb
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/ref/Cart.dll
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.sourcelink.json
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart/obj/Debug/net6.0/Cart.csproj.Up2Date

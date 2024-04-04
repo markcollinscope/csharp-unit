@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fcwJaMviHiOvryboYsrvByhchhK+LkyPe0IiU+36dWf1YkdwNnnkAVpyI50sJrnIl6z8RQYGaG34th7yUNYCdA==",
+  "dgSpecHash": "mrGiabSyiUZmTU0CbtpW8UiOrTvCBWkikPSbo9ueU7wXYyIT/UFd+X7Bp7JLXGXo6fm7CpHBVFjWLZzngCwcMw==",
   "success": true,
   "projectFilePath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/StockRepo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/mark/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "/home/mark/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

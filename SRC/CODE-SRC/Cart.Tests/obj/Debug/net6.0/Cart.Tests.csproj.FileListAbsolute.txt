@@ -97,9 +97,10 @@
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.AssemblyInfoInputs.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.AssemblyInfo.cs
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.csproj.CoreCompileInputs.cache
-/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.csproj.CopyComplete
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/refint/Cart.Tests.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.pdb
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.genruntimeconfig.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/ref/Cart.Tests.dll
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.sourcelink.json
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/Cart.Tests/obj/Debug/net6.0/Cart.Tests.csproj.Up2Date

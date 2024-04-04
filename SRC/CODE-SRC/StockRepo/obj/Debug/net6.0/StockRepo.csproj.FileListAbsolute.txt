@@ -8,8 +8,9 @@
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfoInputs.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.AssemblyInfo.cs
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.csproj.CoreCompileInputs.cache
-/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.csproj.CopyComplete
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/refint/StockRepo.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.pdb
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/ref/StockRepo.dll
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.sourcelink.json
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo/obj/Debug/net6.0/StockRepo.csproj.Up2Date

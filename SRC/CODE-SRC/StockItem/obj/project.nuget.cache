@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SWBmP5L8KWwQwn6/IiyY7s9xkoczyGTSYKc4j0JoK8eepqLZZDldQ6CeLYhafueJa4g6h1IplakDuegB/KYUJA==",
+  "dgSpecHash": "7nCrYbuhM/k25+NGxh+2OIQEv7J+E+D4HIhuzvfg2WbE5EY4gXWjWP7mY7kdfcK79y4rGtuqmvIVBGi/ttxnmQ==",
   "success": true,
   "projectFilePath": "/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockItem/StockItem.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/mark/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "/home/mark/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

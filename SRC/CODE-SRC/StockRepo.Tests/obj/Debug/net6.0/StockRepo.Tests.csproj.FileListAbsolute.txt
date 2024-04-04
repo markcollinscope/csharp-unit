@@ -95,9 +95,10 @@
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.AssemblyInfoInputs.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.AssemblyInfo.cs
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.csproj.CoreCompileInputs.cache
-/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.csproj.CopyComplete
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/refint/StockRepo.Tests.dll
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.pdb
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.genruntimeconfig.cache
 /home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/ref/StockRepo.Tests.dll
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRepo.Tests.sourcelink.json
+/home/mark/GIT/csharp-unit/SRC/CODE-SRC/StockRepo.Tests/obj/Debug/net6.0/StockRep.7088B5E3.Up2Date
